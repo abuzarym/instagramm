@@ -13,6 +13,7 @@ class PicsController < ApplicationController
 	end
 
 	def create
+			
 		@pic = current_user.pics.build(pic_params)
 
 		if @pic.save 
